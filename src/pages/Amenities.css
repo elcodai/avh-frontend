@@ -5,12 +5,23 @@
   min-height: 100vh;
 }
 
+.amenities-intro {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  color: #475569;
+  font-size: 1.125rem;
+}
+
 .amenities-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
 }
 
 .amenity-category {
@@ -19,6 +30,7 @@
   border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  border-left: 4px solid #d97706;
 }
 
 .amenity-category:hover {
@@ -31,7 +43,7 @@
   color: #1e293b;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #d97706;
+  border-bottom: 2px solid #e2e8f0;
 }
 
 .amenity-category ul {
@@ -41,29 +53,100 @@
 }
 
 .amenity-category li {
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   color: #475569;
   position: relative;
   padding-left: 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.amenity-category li:last-child {
+  border-bottom: none;
 }
 
 .amenity-category li::before {
-  content: "•";
+  content: "✓";
   position: absolute;
   left: 0;
   color: #d97706;
   font-weight: bold;
-  font-size: 1.25rem;
+}
+
+.rental-services {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #d97706;
+}
+
+.rental-services h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.rental-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.rental-item {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.rental-item:hover {
+  border-color: #d97706;
+  transform: translateY(-2px);
+}
+
+.rental-item strong {
+  display: block;
+  font-size: 1.125rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.rental-item span {
+  color: #64748b;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 768px) {
   .amenities-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .rental-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
   .amenities-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .amenities-intro {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .amenity-category {
+    padding: 1.5rem;
+  }
+  
+  .rental-services {
+    padding: 2rem;
   }
 }
