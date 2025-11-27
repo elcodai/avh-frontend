@@ -1,0 +1,80 @@
+/* Dining.css */
+.dining-page {
+  padding: 2rem 0 4rem;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.dining-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dining-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dining-card:hover {
+  transform: translateY(-2px);
+}
+
+.dining-card h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.hours {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f1f5f9;
+  border-radius: 0.5rem;
+}
+
+.hours strong {
+  color: #1e293b;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  padding: 0.25rem 0;
+  color: #475569;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.features li::before {
+  content: "🍽️";
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .dining-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .dining-card {
+    padding: 3rem;
+  }
+}
