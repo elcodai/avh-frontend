@@ -51,7 +51,7 @@ const ContactPrompt = () => {
               </div>
               <h3>Quick Message</h3>
               <p>Chat with us for instant assistance</p>
-              <a href="https://wa.me/251911202929" className="contact-link">
+              <a href="https://wa.me/251911208829" className="contact-link">
                 Message on WhatsApp
               </a>
             </div>

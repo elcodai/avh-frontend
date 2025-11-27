@@ -17,7 +17,7 @@
 .prompt-header h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #839abd;
+  color: #7a865d;
   margin-bottom: 1rem;
 }
 
@@ -29,12 +29,38 @@
   margin: 0 auto;
 }
 
+/* Add this missing services-cta section */
+.services-cta {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: #c2d19b; /* Light gray background */
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  border-left: 4px solid #d97706; /* Accent border */
+}
+
+.services-cta h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #849070;
+  margin-bottom: 1rem;
+}
+
+.services-cta p {
+  font-size: 1.25rem;
+  color: #969761;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .cta-buttons {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
 }
 
 .cta-primary {
@@ -59,7 +85,7 @@
 
 .cta-secondary {
   background: transparent;
-  color: #7186a7;
+  color: #1e293b;
   padding: 1rem 2rem;
   border-radius: 0.75rem;
   text-decoration: none;
@@ -113,7 +139,7 @@
 .contact-card h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #5b739b;
+  color: #1e293b;
   margin-bottom: 0.5rem;
 }
 
@@ -124,7 +150,7 @@
 }
 
 .contact-link {
-  color: #6675a0;
+  color: #1e40af;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.125rem;
@@ -132,7 +158,7 @@
 }
 
 .contact-link:hover {
-  color: #36497e;
+  color: #1e3a8a;
   text-decoration: underline;
 }
 
@@ -208,7 +234,7 @@
 
 .cta-button.secondary:hover {
   background: white;
-  color: #5f769b;
+  color: #1e40af;
   transform: translateY(-2px);
 }
 
@@ -237,10 +263,21 @@
     font-size: 1.125rem;
   }
 
+  .services-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .services-cta h2 {
+    font-size: 2rem;
+  }
+
+  .services-cta p {
+    font-size: 1.125rem;
+  }
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
   }
 
   .cta-primary,
@@ -266,13 +303,5 @@
   .cta-button {
     width: 100%;
     max-width: 300px;
-  }
-
-  .prompt-header {
-  text-align: center;
-  margin-bottom: 3rem;
-  background: #f8fafc;  /* Light gray background */
-  padding: 2rem;
-  border-radius: 1rem;
   }
 }
