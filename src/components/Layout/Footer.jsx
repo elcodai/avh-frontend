@@ -2,18 +2,52 @@ import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram, Youtube, Mess
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
+// --- CONSTANT DATA DEFINITION ---
+// Define socialLinks OUTSIDE the component.
+// This prevents it from being redefined on every render, which is good practice.
+const socialLinks = [
+  { 
+    icon: Facebook, 
+    href: "https://facebook.com/AddisViewHotelEthiopia", 
+    label: "Facebook", 
+    color: "hover:text-blue-600" 
+  },
+  { 
+    icon: Twitter, 
+    href: "https://twitter.com/AddisViewHotel", 
+    label: "X (Twitter)", 
+    color: "hover:text-gray-800" 
+  },
+  { 
+    icon: Instagram, 
+    href: "https://instagram.com/AddisViewHotel", 
+    label: "Instagram", 
+    color: "hover:text-pink-600" 
+  },
+  { 
+    icon: Youtube, 
+    href: "https://youtube.com/@AddisViewHotel", 
+    label: "YouTube", 
+    color: "hover:text-red-600" 
+  },
+  { 
+    icon: MessageCircle, 
+    href: "https://wa.me/251911202929", 
+    label: "WhatsApp", 
+    color: "hover:text-green-500" 
+  },
+  { 
+    icon: Send, 
+    href: "https://t.me/AddisViewHotel", 
+    label: "Telegram", 
+    color: "hover:text-blue-400" 
+  }
+];
+
+// --- FOOTER COMPONENT ---
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
-  const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook", color: "hover:text-blue-600" },
-    { icon: Twitter, href: "#", label: "X (Twitter)", color: "hover:text-gray-800" },
-    { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-pink-600" },
-    { icon: Youtube, href: "#", label: "YouTube", color: "hover:text-red-600" },
-    { icon: MessageCircle, href: "#", label: "WhatsApp", color: "hover:text-green-500" },
-    { icon: Send, href: "#", label: "Telegram", color: "hover:text-blue-400" }
-  ];
-
   const handleNewsletter = (e) => {
     e.preventDefault();
     // Add newsletter subscription logic here
@@ -38,7 +72,7 @@ const Footer = () => {
                 Your perfect stay awaits in the heart of Ethiopia's vibrant capital.
               </p>
               
-              {/* Contact Information - No Box */}
+              {/* Contact Information */}
               <div className="contact-info">
                 <div className="contact-item">
                   <MapPin size={16} aria-hidden="true" />

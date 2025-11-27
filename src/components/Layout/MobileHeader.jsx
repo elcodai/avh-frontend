@@ -20,6 +20,7 @@ const MobileHeader = () => {
     { path: '/gallery', label: 'Gallery' },
     { path: '/reservations', label: 'Book Now' },
     { path: '/contact', label: 'Contact' },
+    { path: '/about', label: 'About' },
   ];
 
   return (

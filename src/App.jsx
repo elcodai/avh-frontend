@@ -12,6 +12,8 @@ import Dining from './pages/Dining';
 import Events from './pages/Events';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Services from './pages/Services';
+import About from './pages/About';
 import './App.css';
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
 

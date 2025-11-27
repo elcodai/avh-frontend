@@ -24,7 +24,7 @@ const Amenities = () => {
     },
     {
       category: "Additional Services",
-      items: ["Security", "Concierge", "Currency Exchange", "Special Occasion Planning"]
+      items: ["Security", "Concierge", "Special Occasion Planning"]
     }
   ];
 
